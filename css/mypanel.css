@@ -1,0 +1,21 @@
+.panel > .panel-heading {
+    background-image: none;
+    background-color: white;
+    color: white;
+
+}
+
+a { text-decoration: none !important}
+
+.panel > .panel-heading > .panel-title > a:hover {
+  color: #989898;
+}
+
+.panel > .panel-collapse > .panel-body > a:hover {
+  color: #989898;
+}
+
+.panel > .panel-collapse > .panel-body > a, .panel > .panel-collapse > .panel-body > div{
+  color: black;
+  font-size: 150%;
+}

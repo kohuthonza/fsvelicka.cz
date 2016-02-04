@@ -1,0 +1,24 @@
+# server stranky s chybovymi hlasenimi
+#ErrorDocument 400 /system/pages/error.php?400
+#ErrorDocument 401 /system/pages/error.php?401
+#ErrorDocument 403 /system/pages/error.php?403
+#ErrorDocument 404 /system/pages/error.php?404
+#ErrorDocument 500 /system/pages/error.php?404 
+
+# presmerovani z fsvelicka.cz na www.fsvelicka.cz
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^fsvelicka.cz
+RewriteRule (.*) http://www.fsvelicka.cz/$1 [R=301,QSA,L]
+
+
+RewriteBase /
+
+## hide .php extension
+# To externally redirect /dir/foo.php to /dir/foo
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R,L,NC]
+
+## To internally redirect /dir/foo to /dir/foo.php
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^ %{REQUEST_URI}.php [L]
+

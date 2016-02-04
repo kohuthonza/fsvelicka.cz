@@ -1,0 +1,59 @@
+.bg {
+	background-image:url(/gallery/hurka.jpg);
+	background-position: 70% 0%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	widht: 100%;
+	height: 100%;
+	
+}
+
+a:focus {
+    outline: none;
+}
+
+
+.navbar-brand{
+  font-family: 'Courgette',monospace;
+  font-size: 300%;
+  color: black;}
+  
+.panel-title{
+  font-family: 'Courgette',monospace;
+  font-size: 200%;
+  color: black;}  
+
+.hdl{
+  font-family: 'Alegreya Sans SC',monospace;
+  font-size: 400%;
+  color: black;}  
+  
+
+  
+.desc{
+  font-size:150%;
+  color: black;
+  
+  }
+  
+.link, .showimg, .panel-heading {
+    cursor: pointer;
+}
+
+.contact {
+	font-size:150%;
+	color: black;
+}
+
+body {
+  display: none;
+}
+
+.anchor{
+  display: block;
+  height: 90px; /*same height as header*/
+  margin-top: -90px; /*same height as header*/
+  visibility: hidden;
+}
+
+
